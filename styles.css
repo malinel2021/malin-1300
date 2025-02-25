@@ -1,20 +1,155 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-#siteLogo{
-  width: 100%;
-}
-body {
-  display: flex;
-}
-#staffGallery{
-  width: 70vw;
-  display: inherit;
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.galleryImage{
+
+/* Normal sections, including component comparison */
+section {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  text-align: center;
+  height: auto; /* Prevent forced full-screen height */
+}
+
+/* Section Background Colors */
+#home,
+#about,
+#projects {
+  background: #fffaff;
+}
+
+#home {
+  color: #2c75ff;
+  padding: 150px;
+}
+
+.first,
+.second,
+.third {
+  padding: 20px;
+}
+
+.first {
+  font-size: 50px;
+}
+
+.second {
+  font-family: cursive;
+  font-size: 200px;
+}
+
+/* Fixed Navbar */
+.navbar {
+  background: #ff5d8f;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: auto;
-  height: 300px;
+  text-align: right;
+  z-index: 1000;
+}
+
+/* Center the Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 0;
+  margin-right: 20px;
+}
+
+/* Navbar Links */
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+/* Underline for active section */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjusts the position of the underline */
+  width: 100%;
+  height: 3px;
+  background-color: white; /* Change color if needed */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  background: #d81159;
+  border-radius: 5px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Projects Grid */
+.projects-container {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+/* Project Cards */
+.project-card {
+  background: #d81159;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #87bfff;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: gray;
 }

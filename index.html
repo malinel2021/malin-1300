@@ -1,32 +1,62 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <title>Malin Leven</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
-
-  <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
 
+    <!-- Home Section -->
+    <section id="home">
+      <h1 class="first">Hi! Welcome to my</h1>
+      <h1 class="second">Portfolio</h1>
+      <p class="third">Scroll down to learn more.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a software engineer passionate about creating great projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Project 1: Accessible Components</h3>
+          <p>
+            This project aims to investiage the accessibility of OK/Cancel popup
+            dialogs across different websites/interfaces, comparing usability
+            via different modes of use to identify best practices and suggest
+            potential improvements.
+          </p>
+          <a href="projects/project_1.html" class="btn">Check it out!</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A brief description of Project 2.</p>
+          <a href="projects/project2/index.html" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A brief description of Project 3.</p>
+          <a href="projects/project3/index.html" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
