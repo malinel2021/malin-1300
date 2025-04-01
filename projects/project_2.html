@@ -126,8 +126,8 @@
 <style>
 
 body{
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    margin-inline-start: 60px;
+            margin-inline-end: 60px;
     font-size:18px;
 }
 
@@ -135,34 +135,26 @@ h2{
     text-align:center;
 }
 
-.container {
-    display: flex;
-    justify-content: center; /* Center content */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 95%;
-    max-width: 1400px;
-    margin: auto;
-    gap: 20px; /* Space between boxes */
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
 
-        /* Styling for each question box */
 .box {
-    flex: 1;
-    min-width: 350px; /* Makes columns wider */
-    height:auto;
-    max-width: 450px; /* Prevents them from being too wide */
-    padding: 25px; /* Slightly more padding inside */
     background: #c6e1ff;
     border-radius: 8px;
     box-shadow: 4px 4px 2px #87bfff;
+    padding: 25px;
     text-align: left;
+    transition: all 0.2s ease;
 }
 
-    /* Hover effect */
 .box:hover {
     background: #a8d0ff;
     transform: translateY(-5px);
 }
+
 
 </style>
