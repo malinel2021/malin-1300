@@ -5,31 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malin Leven</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
   <body>
+    <script src="script.js"></script>
+
     <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+      <div class="nav-left">Malin Leven</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a title="Malin Leven" href="./assets/Malin CV 2025.pdf" target="_blank"
+          >Resume</a
+        >
+      </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-      <h1 class="first">Hi! Welcome to my</h1>
-      <h1 class="second">Portfolio</h1>
-      <p class="third">Scroll down to learn more.</p>
-    </section>
+    <section id="home" class="hero">
+      <!-- <img src="sparkle.svg" class="icon sparkle" alt="sparkle" />
+      <img src="heart.svg" class="icon heart" alt="heart" />
+      <img src="star.svg" class="icon star" alt="star" /> -->
 
-    <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        My name is Malin Leven. I'm a software engineer passionate about
-        creating great projects.
-      </p>
+      <div class="intro-box">
+        <h1>Hi! I’m Malin. I am</h1>
+        <p class="typed-wrapper">
+          <span class="auto-type"> </span>
+        </p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: [
+            "a software engineer studying computer science at Brown",
+            "using technology to make <br> the world a better place",
+            "a curious mind with an <br> international perspective",
+          ],
+          typeSpeed: 50,
+          backSpeed: 50,
+          startDelay: 1000,
+          backDelay: 3000,
+          loop: true,
+        });
+      </script>
+
+      <img
+        class="arrow"
+        src="./assets/images/home/arrow-down.svg"
+        alt="arrow"
+      />
     </section>
 
     <!-- Projects Section -->
@@ -67,6 +92,15 @@
           <a href="projects/project_3.html" class="btn">Check it out!</a>
         </div>
       </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Malin Leven. I'm a software engineer passionate about
+        creating great projects.
+      </p>
     </section>
   </body>
 </html>

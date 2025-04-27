@@ -1,155 +1,124 @@
-/* General Reset */
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff;
+  color: black;
 }
 
-/* Normal sections, including component comparison */
 section {
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 50px 0;
-  text-align: center;
-  height: auto; /* Prevent forced full-screen height */
+  min-height: 100vh;
+  padding-top: 100px;
+  /* Prevent navbar from overlapping content */
 }
 
-/* Section Background Colors */
-#home,
-#about,
-#projects {
-  background: #fffaff;
-}
-
-#home {
-  color: #2c75ff;
-  padding: 150px;
-}
-
-.first,
-.second,
-.third {
-  padding: 20px;
-}
-
-.first {
-  font-size: 50px;
-}
-
-.second {
-  font-family: cursive;
-  font-size: 200px;
-}
-
-/* Fixed Navbar */
+/* Navbar */
 .navbar {
-  background: #ff5d8f;
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: right;
-  z-index: 1000;
-}
-
-/* Center the Links */
-.nav-links {
-  list-style: none;
+  background: #FCA4E0;
+  padding: 30px 45px;
   display: flex;
-  justify-content: end;
-  gap: 20px;
-  padding: 0;
-  margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
-/* Navbar Links */
-.nav-links li {
-  display: inline;
+.nav-left {
+  font-size: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: 0.3s;
-}
-
-/* Underline for active section */
-.nav-links a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Adjusts the position of the underline */
-  width: 100%;
-  height: 3px;
-  background-color: white; /* Change color if needed */
-  transition: width 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.nav-links a:hover {
-  background: #d81159;
-  border-radius: 5px;
-}
-
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Projects Grid */
-.projects-container {
-  font-size: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 50px;
-}
-
-/* Project Cards */
-.project-card {
-  background: #d81159;
-  color: white;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #87bfff;
+  font-size: 28px;
   color: black;
-  text-decoration: none;
-  border-radius: 5px;
+  border-bottom: 3px solid transparent;
 }
 
-.btn:hover {
-  background: gray;
+.nav-links a:hover {
+  border-bottom: 3px solid #E7035C;
+}
+
+.nav-links a.active {
+  border-bottom: 3px solid black;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.intro-box {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+}
+
+.intro-box h1 {
+  max-width: 1000px;
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.typed-wrapper {
+  width: 1000px;
+  height: 250px;
+  font-size: 80px;
+  font-style: italic;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.sparkle {
+  top: 100px;
+  left: 60px;
+}
+
+.heart {
+  top: 120px;
+  right: 100px;
+}
+
+.star {
+  bottom: 150px;
+  left: 150px;
+}
+
+/* Arrow */
+.arrow {
+  padding-top: 80px;
+  width: 80px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
 }

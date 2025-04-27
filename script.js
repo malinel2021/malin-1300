@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentSection = "";
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 60; // Adjust for navbar height
+      const sectionTop = section.offsetTop - 100;
       if (window.scrollY >= sectionTop) {
         currentSection = section.getAttribute("id");
       }
@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.add("active");
       }
     });
+    console.log(window.scrollY, currentSection);
   }
 
   window.addEventListener("scroll", changeActiveNav);
+  changeActiveNav(); // <- trigger once on load
 });
