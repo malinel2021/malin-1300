@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Malin Leven</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script src="script.js"></script>
-
     <nav class="navbar">
       <div class="nav-left">Malin Leven</div>
       <div class="nav-links">
@@ -29,7 +33,7 @@
       <div class="intro-box">
         <h1>Hi! I’m Malin. I am</h1>
         <p class="typed-wrapper">
-          <span class="auto-type"> </span>
+          <span class="auto-type"></span>
         </p>
       </div>
 
@@ -39,14 +43,16 @@
         var typed = new Typed(".auto-type", {
           strings: [
             "a software engineer studying computer science at Brown",
-            "using technology to make <br> the world a better place",
+            "driven by a passion to use technology for good",
             "a curious mind with an <br> international perspective",
           ],
           typeSpeed: 50,
           backSpeed: 50,
-          startDelay: 1000,
+          startDelay: 200,
           backDelay: 3000,
           loop: true,
+          contentType: "html",
+          smartBackspace: false,
         });
       </script>
 
@@ -54,11 +60,95 @@
         class="arrow"
         src="./assets/images/home/arrow-down.svg"
         alt="arrow"
+        onclick="scrollToProjects(this)"
       />
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
+      <div class="project-grid">
+        <div class="project-card one">
+          <img src="./assets/images/home/paint-cit.png" alt="Project 1 image" />
+          <div class="project-content">
+            <p class="project-date">February 2025</p>
+            <h3>PAINT THE CIT</h3>
+            <hr class="line" />
+
+            <div class="project-body">
+              <p class="description">
+                This project aims to develop a new color palette for the CIT
+                building (CS department) at Brown, through analyzing the current
+                design, sketching proposals, and experimenting with new palettes
+                that balance mood, function, and accessibility.
+              </p>
+              <div class="skills">
+                <strong>Skills:</strong>
+                <ul>
+                  <li>Apply color theory</li>
+                  <li>Interior/architectural design thinking</li>
+                  <li>Sketching with Adobe tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card two">
+          <img
+            src="./assets/images/home/storyboarding.png"
+            alt="Project 2 image"
+          />
+          <div class="project-content">
+            <p class="project-date">March 2025</p>
+            <h3>PERSONAS & STORYBOARDING</h3>
+            <hr class="line" />
+
+            <div class="project-body">
+              <p class="description">
+                This project aims to develop skills in real-world user
+                observation by studying public interfaces, through methods such
+                as direct observation, user interviews, and visualizing
+                experiences with personas and storyboards.
+              </p>
+              <div class="skills">
+                <strong>Skills:</strong>
+                <ul>
+                  <li>User research</li>
+                  <li>Persona creation & empathy mapping</li>
+                  <li>Storyboarding & narrative UX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card three">
+          <img src="./assets/images/home/aladin.png" alt="Project 3 image" />
+          <div class="project-content">
+            <p class="project-date">March 2025</p>
+            <h3>RESPONSIVE REDESIGN</h3>
+            <hr class="line" />
+
+            <div class="project-body">
+              <p class="description">
+                This project aims to identify usability and accessibility issues
+                on an existing website and transform it through a creative,
+                user-centered redesign, focusing on creating a fully responsive
+                redesign that reflects modern accessibility and design best
+                practices.
+              </p>
+              <div class="skills">
+                <strong>Skills:</strong>
+                <ul>
+                  <li>Responsive web design</li>
+                  <li>Figma mockups & visual design systems</li>
+                  <li>Usability & accessibility analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <!-- <section id="projects">
       <h2>My Projects</h2>
 
       <div class="projects-container">
@@ -92,7 +182,7 @@
           <a href="projects/project_3.html" class="btn">Check it out!</a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- About Me Section -->
     <section id="about">
@@ -102,5 +192,6 @@
         creating great projects.
       </p>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

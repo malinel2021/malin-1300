@@ -24,3 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", changeActiveNav);
   changeActiveNav(); // <- trigger once on load
 });
+
+function scrollToProjects() {
+  const target = document.getElementById("projects");
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
