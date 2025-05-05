@@ -162,6 +162,10 @@ section {
   background-color: #27b667;
 }
 
+.four {
+  background-color: #FFD67A;
+}
+
 .project-content {
   flex: 1;
   padding: 15px;
@@ -209,7 +213,6 @@ section {
   font-size: 16px;
 }
 
-
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
@@ -220,13 +223,13 @@ section {
 }
 
 .skill-tags li {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
-  border: 1px solid #ccc;
+  border: 2px solid #E7035C;
   transition: background-color 0.2s ease;
 }
 

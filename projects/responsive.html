@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESPONSIVE REDESIGN - Malin Leven</title>
+    <link rel="stylesheet" href="../projects.css" />
+    <link rel="stylesheet" href="../satoshi.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">Malin Leven</div>
+      <div class="nav-links">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About Me</a>
+        <a href="../assets/Malin CV 2025.pdf" target="_blank">Resume</a>
+      </div>
+    </nav>
+
+    <div class="project-wrapper">
+      <a href="../index.html#projects" class="back-arrow">←</a>
+
+      <main class="project-page-rr">
+        <div class="project-header">
+          <h1>RESPONSIVE REDESIGN</h1>
+          <hr
+            style="border: 0.5px solid black; width: 100%; margin-bottom: 20px"
+          />
+
+          <div class="project-meta">
+            <span>Timeframe: 1.5 weeks</span>
+            <span>My role: Web engineer</span>
+            <span>Tools: HTML/CSS</span>
+          </div>
+          <hr
+            style="border: 0.5px solid black; width: 100%; margin-top: 20px"
+          />
+        </div>
+
+        <div class="project-content">
+          <aside class="project-sidebar">
+            <a href="#background">Background</a>
+            <a href="#research">Research & Analysis</a>
+            <a href="#design">Design Solution</a>
+            <a href="#website">Website</a>
+            <a href="#reflection">Reflection</a>
+          </aside>
+
+          <section class="project-details">
+            <div id="background" class="part">
+              <h2>Background</h2>
+              <p>
+                For this project I will be redesigning an interface of my choice that I think could be improved. This is a project that I am super excited about, so stay tuned for this page to bring you along on my journey!
+              </p>
+              
+              <br />
+              <p>My aims for this project were to:</p>
+              <ul>
+                <li>Identify issues with interfaces (usability, accessibility, efficiency, learnability, memorability)</li>
+          <li>Improve my design skills, including developing a theme/vibe, color scheme, etc.</li>
+          <li>Design a responsive website that can be used across different screen sizes</li> 
+              </ul>
+              <p> As I work on this project, I will keep these skills in mind and try my best to improve upon them, as they will be very useful to me in the future! </p>
+
+              <br>
+
+              <p> The interface I have chosen is the <a href="https://aladinmess.com/home">“Home”</a> page for one of my favourite restaurants in Hong Kong, an Indian restaurant called <a href="https://g.co/kgs/Cz2gSVb">Aladin Mess</a>. I am choosing to redesign this page because I love this restaurant and I think they should be more successful, and with their current website design, I do not think they are doing themselves justice. They are lacking in usability, accessibility, and overall design.
+        </p>
+        <p>Below are some screenshots of their current website:</p>
+        <img src="../assets/images/aladin/aladin-1.png">
+        <img src="../assets/images/aladin/aladin-2.png">
+        <img src="../assets/images/aladin/aladin-3.png">
+        <img src="../assets/images/aladin/aladin-4.png">
+
+
+
+            </div>
+            <div id="research" class="part">
+              <h2>Research</h2>
+              <p>To be able to redesign this page, I must identify the main problems. The page has a range of issues, here are the various problems I have identified with this page:
+        </p>
+        <br>
+
+        <details> <summary>1. Efficiency</summary>
+        <ul>
+            <li>No clear visual hierarchy</li>
+            <li>Low-resolution opening image that takes up almost a whole screen, doesn’t allow for efficient scrolling</li>
+            <li>Cluttered home page</li>
+            <li>Calls to action are not clear</li>
+            <li>Long page, requires a lot of scrolling to gather information (home page should be simple and present facts for users to easily and quickly understand)</li>
+          </ul>
+        </details>
+        
+          
+        <details> <summary>2. Learnability</summary>
+          <ul>
+            <li>No clear structure of the page</li>
+            <li>Inconsistent spacing</li>
+            <li>Inconsistent text sizing and color scheme</li>
+            <li>Low contrast in some areas</li>
+          </ul>
+        </details>
+
+
+        <details> <summary>3. Memorability </summary>
+          <ul>
+            <li>Visuals are not very engaging</li>
+            <li>Lack of brand identity (e.g. the generic background)</li>
+            <li>Outdated design</li>
+          </ul>
+        </details>
+
+
+         <details> <summary>4. Conceptual Model</summary>
+          <ul>
+            <li>Has some aspects of a restaurant “Home” page:
+              <ul>
+                <li>Has some menu item images</li>
+                <li>Has the location of the restaurant</li>
+                <li>Has the contact information</li>
+                <li><strong>However, this information is not immediately found, users must search to find the important details about the restaurant.</strong></li>
+              </ul>
+            </li>
+            <li>Missing information about delivery/pickup</li>
+            <li>Links to Facebook, Twitter and YouTube, and “Like” on Facebook don't lead anywhere (lead to the current home page)</li>
+          </ul>
+        </details>
+
+        <details> <summary>5. Accessibility</summary>
+            <p> Aside from usability issues, the page also has several accessibility issues. This is very important because it means that users, especially people with disabilities, will have a harder time using this website. This leads to user frustration, or even users being turned away from visiting this site, and the restaurant at all because of it,  which would impact Aladin Mess negatively (missed opportunities). In terms of accessibility issues, this is what I have identified:
+        </p>
+        <br>
+        <ul>
+            <li>Errors detected by WAIVE:
+              <ul>
+                <li>15 low contrast errors (very low contrast)</li>
+                <li>Images have no alt values or alt text</li>
+                <li>Heading levels are skipped</li>
+                <li>Unordered lists</li>
+              </ul>
+            </li>
+          </ul>
+                    
+          <ul>
+            <li>I agree with all the issues detected by WAIVE. Here are the issues I found when I browsed this website:
+              <ul>
+                <li>The text is small</li>
+                <li>The images are very grainy, and are hard to view/read
+                  <ul>
+                    <li>Even the logo is grainy, which could deter potential customers who are visually impaired</li>
+                  </ul>
+                </li>
+                <li>Various issues with colors and contrast, low contrast where there is important text</li>
+                <li>Confusing layout (e.g. if using a screen reader, would be confusing), with no visual hierarchy</li>
+                <li>Hovering over the “Get directions now” button changes the button color, which makes the text hard to read</li>
+              </ul>
+            </li>
+          </ul>
+        </details>
+
+        
+
+          <p>I can use this analysis of the web page's current issues in order to create a redesign that addresses these problems.</p>
+            </div>
+
+        
+
+            <div id="design" class="part">
+              <h2>Design Solution</h2>
+              <p> This is a style guide I created to help me develop my mockups. With this style guide I wanted to have a clear theme and color scheme that mirrors the vibe of the original website. This will make it much easier for my to make my mockups, as I can refer back to them when I am choosing what elemnts to add. This was really fun!
+        </p>
+        <img src="../assets/images/aladin/style-guide.png" >
+              <br />
+
+              <p> Below are the mockups I created for my new website. I created these to help guide me when I would be making them as real websites, and I made them responsive in order to understand how I would need to adapt my elements for different screen sizes when writing my code later on.</p>
+              <br>
+
+        <p> <strong>Desktop mockup:</strong> </p>
+        <img src="../assets/images/aladin/desktop.png">
+
+         <p>Here are the key design choices I made in my mockup:
+
+            <ul>
+                <li>Instead of having the wallpaper, which is grainy and low resolution, and doesn’t add anything to the brand identity, I will be making a custom wallpaper. I will be using an Indian mandala design, taking inspiration from the restaurant’s menu, which has a similar one on its front page. My hope is that this will be eye-catching and reflect the restaurant’s cultural identity, while also looking more sophisticated than the previous background</li>
+                <li>I will be using food icons in a carousel, as the website previously had a carousel, but this one will be cleaner and easier to use (as the arrows only appear on hover of the image, and even then are not that visible in the original version) </li>
+                <li>I adapted the color scheme to keep to the original theme slightly (with the green colors and beige background) </li>
+                <li>Re-did the logo to make it readable</li>
+                <li>Using a embedded map to show the location of the restaurant - I think this restaurant is not as popular as it could be because the location is hard to find, so I hope to alleviate this using an interactive map</li>
+
+            </ul>
+        </p>
+        <br>
+
+        <p><strong>Tablet and mobile mockup:</strong> </p>
+        <img src="../assets/images/aladin/tablet-mobile.png">
+<br>
+        <p>After receiving critique from my peers in a studio session, I was able to use their notes to help improve my final product. Here were the notes and suggestions I received from my peers:</p>
+         <br>
+
+        <details><summary>Critiques: </summary>
+        <ul>
+  <li>On the iPhone the eyes go to the blue part</li>
+  <li>The white background is too stark</li>
+  <li>Food slideshow is a bit cramped (maybe just do a swipe)</li>
+  <li>Find us here section is too big</li>
+</ul>
+        
+        </details>
+
+        <details><summary>Suggestions: </summary>
+<ul>
+  <li>On hover of the food, the name of the food could pop up</li>
+  <li>Use a more ‘Indian’ typeface instead of Times</li>
+  <li>Make the ‘find us here’ on the phone thinner</li>
+  <li>Add more of the vibe of the restaurant back in</li>
+  <li>Implement the green colors more</li>
+  <li>Pair slideshow with an action (e.g. order it or go to menu)</li>
+  <li>Add a button to change the language to Cantonese</li>
+  <li>Increase the border radius of the beige main section</li>
+  <li>Scale the rounding of the blue part</li>
+</ul>
+</details>
+
+<p>Although I was not able to use all of their suggestions, and I also had some differing opinions from my peers — which is very normal as design is extremely subjective — I implemented several changes, based off my critique received as well as my own mind changing.</p>
+<br>
+
+<p> <strong>The changes include:</strong></p>
+<ul>
+  <li>Added the food names on hover over the items in the carousel</li>
+  <li>Moved the arrows from the food carousel to the outer edges of the food items</li>
+  <li>Added pagination to the carousel, and made the carousel draggable
+    <ul>
+      <li>This is more self-explanatory for users to use</li>
+    </ul>
+  </li>
+  <li>Changing the food slideshow to only show 1 item per slide on the smaller screen sizes
+    <ul>
+      <li>This made it less cramped, and ensures the users could still see the image</li>
+    </ul>
+  </li>
+  <li>Removing the mandala background on the smallest screens
+    <ul>
+      <li>This made the layout much less cramped</li>
+    </ul>
+  </li>
+  <li>Made the ‘Find us here’ section thinner on the smaller screens</li>
+  <li>Changed the font to Trebuchet MS
+    <ul>
+      <li>This adheres to the vibe of the restaurant more than the font I originally chose</li>
+    </ul>
+  </li>
+  <li>Added a button to change the language to Chinese/Cantonese
+    <ul>
+      <li>This is important because the restaurant is in Hong Kong, and the majority of people there speak/read Chinese</li>
+    </ul>
+  </li>
+  <li>Changed the color of the burger menu, and implemented a green dropdown
+    <ul>
+      <li>This helps add in more of the green color, and sticks to the theme better</li>
+    </ul>
+  </li>
+  <li>Increased the border radius of the beige main section</li>
+  <li>Changed the color of the arrows on click
+    <ul>
+      <li>Better accessibility</li>
+    </ul>
+  </li>
+  <li>Added a changing border color for the ‘order online’ and language changing button
+    <ul>
+      <li>Better accessibility</li>
+    </ul>
+  </li>
+</ul>
+ </div>
+
+ <div id="website" class="part">
+
+<h2 class="yay"> Without further ado, here is the <a href="https://malinel2021.github.io/aladin-mess/" target="_blank">link to my redesigned website! </a></h2>
+
+      <video class="my-video" autoplay muted>
+        <source src="../assets/images/aladin/demo.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+      </video>
+      </div>
+
+
+           
+            <div id="reflection" class="part">
+              <h2>Reflection</h2>
+              <p>
+               <p>
+            I’m really proud of how this project turned out. I believe the redesigned website successfully preserves the original personality and purpose of the site, while offering a much cleaner, more accessible, and visually appealing experience. The final product is both usable and accessible, and has been developed to work well across various screen sizes.
+          </p>
+          <br>
+          
+          <p>
+            One of the biggest insights I had during this redesign was that it is surprisingly difficult to maintain the original “vibe” of a website during a redesign - especially when that vibe comes from things that aren't necessarily accessible or visually clean - like Aladin Mess' original logo. Balancing the aesthetics, brand personality, and usability was an exciting but difficult challenge.
+          </p>
+          <br>
+          
+          <p>
+            I also learned a lot about the importance of accessibility - from color contrast and screen reader compatibility to visual hierarchy and consistent navigation. These changes were not only technical fixes, they improve the user experience for everyone, especially people struggling with issues such as visual impairement, etc.
+          </p>
+          <br>
+
+          <p>Key Outcomes:</p>
+          <ul>
+            <li>Redesigned site adapts well to different screen sizes and devices</li>
+            <li>Font sizes, responsive layouts, and language options tested across breakpoints</li>
+            <li>Usability issues (Part 1) addressed with clearer hierarchy, simplified navigation, and better structure</li>
+            <li>Accessibility issues (Part 1) addressed with improved color contrast, alt text, readable typefaces, and accessible buttons</li>
+            <li>Final site matches high-fidelity mockups and is ready for use</li>
+            <li>Provides a modernized and sleek look without losing the personality of the original site</li>
+          </ul>
+          <br>
+          
+          <p>What I Learned:</p>
+          <ul>
+            <li>Accessibility is not just an added bonus to a website - it influences how people feel when they use a website</li>
+            <li>Designing for responsiveness is very difficult, and requires a lot of planning beforehand, as well as small tweaks during coding</li>
+            <li>Small visual tweaks (like font types, shades of colors, and outlines) can make a big difference to the look and feel of a web page</li>
+          </ul>
+              </p>
+
+              <p>I also had a lot of fun with this project, especially because I love this restaurant so much! Also - I am planning on showing my designs to the restaurant owner when I am back in Hong Kong!</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script>
+      const sections = document.querySelectorAll(".project-details > div");
+      const navLinks = document.querySelectorAll(".project-sidebar a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 500;
+          if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").substring(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
