@@ -6,13 +6,6 @@
     <title>Malin Leven</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./satoshi.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <nav class="navbar">
@@ -68,59 +61,66 @@
 
     <section id="projects">
       <div class="project-grid">
-        <div class="project-card one">
-          <img src="./assets/images/home/paint-cit.png" alt="Project 1 image" />
-          <div class="project-content">
-            <p class="project-date">February 2025</p>
-            <h3>PAINT THE CIT</h3>
-            <hr class="line" />
+        <a href="projects/paint_cit.html" class="project-link">
+          <div class="project-card one">
+            <img
+              src="./assets/images/paint-cit/paint-cit-3.png"
+              alt="Project 1 image"
+            />
+            <div class="project-content">
+              <p class="project-date">February 2025</p>
+              <h3>PAINT THE CIT</h3>
+              <hr class="line" />
 
-            <div class="project-body">
-              <p class="description">
-                This project aims to develop a new color palette for the CIT
-                building (CS department) at Brown, through analyzing the current
-                design, sketching proposals, and experimenting with new palettes
-                that balance mood, function, and accessibility.
-              </p>
-              <div class="skills">
-                <h3>Skills:</h3>
-                <ul>
-                  <li>Apply color theory</li>
-                  <li>Interior/architectural design thinking</li>
-                  <li>Sketching with Adobe tools</li>
-                </ul>
+              <div class="project-body">
+                <p class="description">
+                  This project aims to develop a new color palette for the CIT
+                  building (CS department) at Brown, through analyzing the
+                  current design, sketching proposals, and experimenting with
+                  new palettes that balance mood, function, and accessibility.
+                </p>
+                <div class="skills">
+                  <h3>Skills:</h3>
+                  <ul>
+                    <li>Apply color theory</li>
+                    <li>Interior/architectural design thinking</li>
+                    <li>Sketching with Adobe tools</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="project-card two">
-          <img
-            src="./assets/images/home/storyboarding.png"
-            alt="Project 2 image"
-          />
-          <div class="project-content">
-            <p class="project-date">March 2025</p>
-            <h3>PERSONAS & STORYBOARDING</h3>
-            <hr class="line" />
+        </a>
+        <a href="projects/storyboard.html" class="project-link">
+          <div class="project-card two">
+            <img
+              src="./assets/images/home/storyboarding.png"
+              alt="Project 2 image"
+            />
+            <div class="project-content">
+              <p class="project-date">March 2025</p>
+              <h3>PERSONAS & STORYBOARDING</h3>
+              <hr class="line" />
 
-            <div class="project-body">
-              <p class="description">
-                This project aims to develop skills in real-world user
-                observation by studying public interfaces, through methods such
-                as direct observation, user interviews, and visualizing
-                experiences with personas and storyboards.
-              </p>
-              <div class="skills">
-                <h3>Skills:</h3>
-                <ul>
-                  <li>User research</li>
-                  <li>Persona creation & empathy mapping</li>
-                  <li>Storyboarding & narrative UX</li>
-                </ul>
+              <div class="project-body">
+                <p class="description">
+                  This project aims to develop skills in real-world user
+                  observation by studying public interfaces, through methods
+                  such as direct observation, user interviews, and visualizing
+                  experiences with personas and storyboards.
+                </p>
+                <div class="skills">
+                  <h3>Skills:</h3>
+                  <ul class="skill-tags">
+                    <li>User research</li>
+                    <li>Persona creation & empathy mapping</li>
+                    <li>Storyboarding & narrative UX</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
         <div class="project-card three">
           <img src="./assets/images/home/aladin.png" alt="Project 3 image" />
           <div class="project-content">
@@ -146,6 +146,14 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="arrow-wrapper">
+        <img
+          class="arrow-2"
+          src="./assets/images/home/arrow-down.svg"
+          alt="arrow"
+          onclick="scrollToAboutMe(this)"
+        />
       </div>
     </section>
     <!-- Projects Section -->
@@ -187,11 +195,29 @@
 
     <!-- About Me Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>
-        My name is Malin Leven. I'm a software engineer passionate about
-        creating great projects.
+      <img
+        class="headshot"
+        src="./assets/images/home/headshot.jpg"
+        alt="Malin Leven"
+      />
+      <p class="about-me">
+        My name is Malin Leven. I am originally from Sweden, but I grew up in
+        Hong Kong, and now I’m a junior at Brown. <br /><br />
+        I’m super passionate about building projects that people enjoy using. I
+        speak English, Swedish, and Chinese, and I’m always eager to learn from
+        people with different backgrounds and experiences.
+        <br /><br />
+        Outside of tech, I love cooking (fun fact: I went to cooking school!),
+        going on walks, and I’m currently also learning how to DJ!
       </p>
+      <!-- <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/your-username" target="_blank">
+          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="mailto:your.email@example.com">
+          <img src="./assets/icons/email.svg" alt="Email" />
+        </a>
+      </div> -->
     </section>
     <script src="script.js"></script>
   </body>

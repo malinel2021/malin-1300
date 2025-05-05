@@ -14,7 +14,6 @@ body {
 section {
   min-height: 100vh;
   padding-top: 100px;
-  /* Prevent navbar from overlapping content */
 }
 
 /* Navbar */
@@ -124,19 +123,30 @@ section {
 .project-card {
   display: flex;
   background: #f5f5f5;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 15px;
   overflow: hidden;
   padding: 10px 20px;
   gap: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .project-card img {
   width: 250px;
   height: 200px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   object-fit: cover;
 }
 
@@ -155,7 +165,7 @@ section {
 .project-content {
   flex: 1;
   padding: 15px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -199,9 +209,62 @@ section {
   font-size: 16px;
 }
 
-.skills ul {
-  margin-left: 20px;
-  line-height: 1.4;
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+}
+
+.skill-tags li {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s ease;
+}
+
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arrow-2 {
+  width: 80px;
+  padding-top: 20px;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.headshot {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-me {
+  max-width: 600px;
+  font-size: 26px;
+  line-height: 1.6;
 }
 
 @keyframes bounce {

@@ -31,3 +31,10 @@ function scrollToProjects() {
     target.scrollIntoView({ behavior: "smooth" });
   }
 }
+
+function scrollToAboutMe() {
+  const target = document.getElementById("about");
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
