@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paint the CIT - Malin Leven</title>
+    <title>Crave Aid - Malin Leven</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -26,17 +26,17 @@
     <div class="project-wrapper">
       <a href="../index.html#projects" class="back-arrow">←</a>
 
-      <main class="project-page-pc">
+      <main class="project-page-ca">
         <div class="project-header">
-          <h1>PAINT THE CIT</h1>
+          <h1>CRAVE AID</h1>
           <hr
             style="border: 0.5px solid black; width: 100%; margin-bottom: 20px"
           />
 
           <div class="project-meta">
-            <span>Timeframe: 1.5 weeks</span>
-            <span>My role: Visual Designer</span>
-            <span>Tools: Adobe, Color theory</span>
+            <span>Timeframe: 4 weeks</span>
+            <span>My role: UI/UX, React and Firebase integration</span>
+            <span>Tools: APIs, HTML/CSS</span>
           </div>
           <hr
             style="border: 0.5px solid black; width: 100%; margin-top: 20px"
@@ -46,8 +46,8 @@
         <div class="project-content">
           <aside class="project-sidebar">
             <a href="#background">Background</a>
-            <a href="#research">Research & Analysis</a>
-            <a href="#design">Design Solution</a>
+            <a href="#process">Process & Challenges</a>
+            <a href="#product">Final Product</a>
             <a href="#reflection">Reflection</a>
           </aside>
 
@@ -55,120 +55,74 @@
             <div id="background" class="part">
               <h2>Background</h2>
               <p>
-                For this project, I redesigned the visual identity of the CIT
-                (Brown University's Computer Science building), which is going
-                to be repainted in the near future. In this assignment, I
-                proposed a new color palette for the building’s interior based
-                on principles of accessibility, mood, and color functionality.
-              </p>
-              <br />
-              <p>
-                The CIT acts as a user interface in itself, and this project
-                encouraged us to think about physical space through a design
-                lens, considering how colors influence both usability and
-                emotion. Through exploring the existing layout, evaluating
-                lighting, and experimenting with paint swatches, I developed a
-                palette that improves both the atmosphere and clarity of the
-                space.
+                Crave Aid was born from a shared frustration with food waste and
+                the everyday question: "What can I make with what I already
+                have?". Our team of four set out to solve this problem,
+                especially for busy students and young professionals. Inspired
+                by personal experiences and user interviews, we envisioned a
+                tool that makes meal planning smarter, more sustainable, and
+                more personalized.
               </p>
               <br />
               <p>My aims for this project were to:</p>
               <ul>
                 <li>
-                  Learn how color can act as a functional and emotional
-                  indicator in physical spaces
+                  Use React to build a clean, usable frontend with intuitive
+                  pantry and recipe views.
                 </li>
                 <li>
-                  Develop a color palette that balances design, usability, and
-                  accessibility
+                  Work with Firebase to enable real-time ingredient storage and
+                  user-specific data persistence.
                 </li>
                 <li>
-                  Explore how light and material interact with color in a
-                  multi-floor building
+                  Integrate external APIs, specifically TheMealDB, to
+                  dynamically fetch and display recipes.
+                </li>
+                <li>
+                  Practice full-stack collaboration—merging UI design with
+                  backend logic and debugging complex data flows.
                 </li>
               </ul>
             </div>
-            <div id="research" class="part">
-              <h2>Research</h2>
+            <div id="process" class="part">
+              <h2>Process & Challenges</h2>
               <p>
-                I chose to focus on the main area of the CIT building, the 1st
-                floor atrium, because it is the place most people visit/pass
-                through. This area also has both fluorescent lighting and
-                natural lighting, which will help me ensure that my new colors
-                will work in both types of lighting available throughout the
-                building.
+                Crave Aid was a full-stack collaboration that required tight
+                coordination between frontend and backend systems. One of our
+                biggest hurdles was syncing the complex data from TheMealDB API
+                with our React-based UI. The API required two types of calls:
+                one to fetch all matching meal IDs and another to retrieve full
+                recipe data. To handle this, we built a two-step backend
+                pipeline to pull the IDs, query full recipes, and then process
+                them into a clean format - counting non-empty ingredients and
+                matching them to the user’s pantry.
               </p>
+              <br />
+
               <p>
-                <br />
-                Below is a before picture of the current CIT 1st floor atrium:
+                The biggest challenge came in communicating this data to the
+                frontend. We cycled through multiple serialization strategies -
+                2D arrays, maps, even dynamic parameter packing—before landing
+                on a solution using a custom Recipe class with getter methods.
+                This allowed us to serialize cleanly into JSON and parse the
+                data using JSON.parse on the frontend.
               </p>
-              <img
-                src="../assets/images/paint-cit/paint-cit-1.png"
-                alt="Paint the CIT before photo"
-              />
+
               <br />
               <p>
-                To help me visualise the redesign and assess the current state
-                of the interior and its issues, I sketched this image using
-                Adobe Illustrator, color matching the current pallete. Below is
-                my sketch of the before picture, followed my my analysis of the
-                current state:
+                On my end, I designed and built the React frontend, setting up
+                both the pantry and recipe pages with search, autofill, and
+                results rendering. Once Firebase was integrated by my group
+                member for persistent user data, I connected that flow to power
+                pantry updates in real time. In the final stretch, I helped
+                integrate backend responses into the frontend, ensuring our
+                design remained accessible and visually clean while handling a
+                lot of dynamic content.
               </p>
-              <img
-                src="../assets/images/paint-cit/paint-cit-2.png"
-                alt="CIT before sketch"
-              />
-              <div class="color-analysis-grid">
-                <div class="color-column">
-                  <h3>Colors:</h3>
-                  <ul>
-                    <li>
-                      Grey/beige neutral walls, dark carpeting, and pops of blue
-                      (like railings)
-                    </li>
-                    <li>Cooler tones under fluorescent lighting</li>
-                    <li>Warmer, brighter tones with natural lighting</li>
-                  </ul>
-
-                  <h3>Color as Functionality:</h3>
-                  <ul>
-                    <li>Blue pillars evoke technology, fitting for the CIT</li>
-                    <li>
-                      Grey walls are calming, ideal for a study-heavy
-                      environment
-                    </li>
-                    <li>
-                      Orange furniture stands out, aiding accessibility and
-                      seating visibility
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="color-column">
-                  <h3>What I Like:</h3>
-                  <ul>
-                    <li>Blue pillars add visual interest amidst grey tones</li>
-                    <li>
-                      White ceiling/skylight area makes the space feel brighter
-                      and larger
-                    </li>
-                    <li>
-                      Overall color coordination feels cohesive and intentional
-                    </li>
-                  </ul>
-
-                  <h3>What Can Be Improved:</h3>
-                  <ul>
-                    <li>Carpet pattern is uneven and visually bland</li>
-                    <li>Grey walls can feel dull and unenergizing</li>
-                    <li>Colors could be more stimulating and engaging</li>
-                  </ul>
-                </div>
-              </div>
             </div>
 
-            <div id="design" class="part">
-              <h2>Design Solution</h2>
+            <div id="product" class="part">
+              <h2>Final Product</h2>
               <p>
                 Here is my proposal for a color palette. It is annotated with
                 justifications and the roles the colors play:
